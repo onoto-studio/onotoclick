@@ -22,6 +22,14 @@
           "single": "heading1"
         }
       },
+      "instagram": {
+  "type": "Link",
+  "config": {
+    "label": "Instagram Link",
+    "select": "web",
+    "placeholder": "https://instagram.com/..."
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
