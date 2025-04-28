@@ -1,0 +1,30 @@
+{
+  "id": "buttons",
+  "type": "SharedSlice",
+  "name": "Buttons",
+  "description": "Buttons",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "click": {
+          "type": "Link",
+          "config": {
+            "label": "Click",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
