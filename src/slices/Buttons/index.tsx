@@ -3,7 +3,7 @@ import { SliceComponentProps } from "@prismicio/react";
 import { PrismicNextLink, PrismicNextImage } from "@prismicio/next";
 
 /**
- * Type pour le contenu du Slice "Buttons"
+ * Type pour le contenu du Slice "Buttons", qui doit respecter la structure attendue par SliceComponentProps
  */
 type ButtonsSlice = {
   slice_type: string; // Propriété attendue pour identifier le type du slice
@@ -30,6 +30,9 @@ type ButtonsSlice = {
  */
 export type ButtonsProps = SliceComponentProps<ButtonsSlice>;
 
+/**
+ * Composant pour le Slice "Buttons"
+ */
 const Buttons: FC<ButtonsProps> = ({ slice }) => {
   const image = slice.primary?.ppimage;
   const link = slice.primary?.click;
