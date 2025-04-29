@@ -3,16 +3,67 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"click": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Steel",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laboris adipisicing est duis in laboris in officia Lorem officia enim culpa consequat sint ut proident.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"buttonLink": {
 				"__TYPE__": "LinkContent",
-				"key": "5b2ace76-4c28-4415-9d5d-ab132cc95907",
 				"value": {
 					"__TYPE__": "ExternalLink",
-					"url": "http://google.com",
-					"text": "broad"
+					"url": "http://google.com"
 				}
+			},
+			"buttonText": {
+				"__TYPE__": "FieldContent",
+				"value": "matter",
+				"type": "Text"
+			},
+			"backgroundImage": {
+				"__TYPE__": "ImageContent",
+				"url": "https://images.unsplash.com/photo-1616679312958-a86d9539afae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTk1MzAwNDZ8MA&ixlib=rb-4.0.3&q=85",
+				"alt": "orange fruit on white ceramic plate",
+				"origin": {
+					"id": "Jr7t5QviCDM",
+					"url": "https://images.unsplash.com/photo-1616679312958-a86d9539afae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTk1MzAwNDZ8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3024,
+					"height": 4032
+				},
+				"width": 3024,
+				"height": 4032,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"thumbnails": {}
 			}
 		},
-		"items": []
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
 	}
 ]
