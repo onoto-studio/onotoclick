@@ -3,9 +3,11 @@ import { SliceComponentProps } from "@prismicio/react";
 import { PrismicNextLink, PrismicNextImage } from "@prismicio/next";
 
 /**
- * Type spécifique pour le champ de slice (en fonction de la structure des données)
+ * Type pour le contenu du Slice "Buttons", y compris les champs 'ppimage' et 'click'
  */
 type ButtonsSlice = {
+  slice_type: string; // Propriété attendue pour identifier le type du slice
+  variation: string;  // Variation du slice (si applicable)
   primary: {
     ppimage: {
       url: string;
@@ -20,6 +22,7 @@ type ButtonsSlice = {
       };
     };
   };
+  items: any[];  // Si tu utilises des items dans ce slice, garde cette propriété
 };
 
 /**
