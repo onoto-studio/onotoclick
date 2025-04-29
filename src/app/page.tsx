@@ -19,6 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const home = await client.getByUID("page", "home");
 
   return {
+    <div>Bonsoir</div>
     title: asText(home.data.title),
     description: home.data.meta_description,
     openGraph: {
