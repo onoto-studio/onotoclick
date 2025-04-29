@@ -3,7 +3,7 @@ import { SliceComponentProps } from "@prismicio/react";
 import { PrismicNextLink, PrismicNextImage } from "@prismicio/next";
 
 /**
- * Type pour le contenu du Slice "Buttons", y compris les champs 'ppimage' et 'click'
+ * Type pour le contenu du Slice "Buttons"
  */
 type ButtonsSlice = {
   slice_type: string; // Propriété attendue pour identifier le type du slice
@@ -22,7 +22,7 @@ type ButtonsSlice = {
       };
     };
   };
-  items: any[];  // Si tu utilises des items dans ce slice, garde cette propriété
+  items: never[];  // Si tu n'as pas d'éléments dynamiques, tu peux utiliser `never[]` pour indiquer un tableau vide
 };
 
 /**
