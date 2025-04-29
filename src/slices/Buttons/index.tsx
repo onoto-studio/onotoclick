@@ -1,11 +1,31 @@
 import { FC } from "react";
 import { SliceComponentProps } from "@prismicio/react";
-import { PrismicNextLink, PrismicNextImage } from "@prismicio/next"; // Assure-toi d'importer les deux composants correctement
+import { PrismicNextLink, PrismicNextImage } from "@prismicio/next";
 
 /**
- * Props for Buttons Slice
+ * Type spécifique pour le champ de slice (en fonction de la structure des données)
  */
-export type ButtonsProps = SliceComponentProps<any>;
+type ButtonsSlice = {
+  primary: {
+    ppimage: {
+      url: string;
+      alt: string;
+      width?: number;
+      height?: number;
+    };
+    click: {
+      value: {
+        url: string;
+        text: string;
+      };
+    };
+  };
+};
+
+/**
+ * Props pour le Slice "Buttons" avec le type spécifique
+ */
+export type ButtonsProps = SliceComponentProps<ButtonsSlice>;
 
 const Buttons: FC<ButtonsProps> = ({ slice }) => {
   const image = slice.primary?.ppimage;
